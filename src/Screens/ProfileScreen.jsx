@@ -11,7 +11,7 @@ function ProfileScreen() {
         <div className='profileScreen'>
             <Nav />
             <div className='profileScreen__body'>
-                <h1>Edit profile</h1>
+                <h1>Profile</h1>
               <div className='profileScreen__info'>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt=""/>
                
@@ -19,6 +19,8 @@ function ProfileScreen() {
                         <h2>{user.email}</h2>
                         <div className='profileScreen__plans'>
                             <h3>Plans</h3>
+                            <p>Hey, Congratulations!😊 You are on the free plan powerd by KD.</p>
+                            <p>Enjoy NetFlix 😉</p>
                             <button onClick={()=> auth.signOut()} className='profileScreen__signOut'>Sign Out</button>
                         </div>
                     </div>
@@ -28,4 +30,4 @@ function ProfileScreen() {
     )
 }
 
-export default ProfileScreen;
+export default ProfileScreen; 
